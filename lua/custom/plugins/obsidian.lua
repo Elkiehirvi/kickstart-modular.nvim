@@ -12,6 +12,11 @@ return {
   --   "BufNewFile path/to/my-vault/*.md",
   -- },
   opts = {
+    frontmatter = {
+      {
+        enabled = false,
+      },
+    },
     workspaces = {
       {
         name = 'vault-of-awesome',
@@ -25,7 +30,6 @@ return {
       create_new = false,
     },
     new_notes_location = 'current_dir',
-    disable_frontmatter = true,
     legacy_commands = false,
   },
 }
